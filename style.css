@@ -1,0 +1,125 @@
+body{
+    background-color: antiquewhite;
+}
+h2{text-align: center;}
+.full{
+    height:400px;
+    width:400px;margin-left:36%;
+}
+
+.face{
+    margin:50px 100px 5px;    
+    background-color:plum;
+    height:110px;
+    width:150px;
+    border-radius:100px 100px 0px 0px;
+    animation:face 1s infinite;
+}
+@keyframes face {    
+    50%{width:180px;}
+    
+}
+.left-eye{
+    position:absolute;    
+    background-color:white;
+    height:15px;
+    width:15px;
+    border-radius: 15px;
+    margin-left:25px;
+    margin-top:70px;
+}
+.right-eye{
+    position:absolute;    
+    background-color:white;
+    height:15px;
+    width:15px;
+    border-radius: 15px;
+    margin-left:110px;
+    margin-top:70px;
+}
+.body{
+    position:absolute;
+    margin:0px 100px;    
+    background-color:plum;
+    height:165px;
+    width:150px;
+    border-radius: 10px 10px 45px 45px;
+    animation:body 3s infinite;
+}
+@keyframes body {
+    0%{
+        border-radius: 50px 50px 45px 45px;
+    }
+    25%{border-radius: 50px 50px 45px 45px;
+        transform: rotate(90deg);
+    }
+    50%{border-radius: 50px 50px 45px 45px;
+        transform:rotate(180deg);
+    }
+    75%{border-radius: 50px 50px 45px 45px;
+        transform:rotate(270deg);
+    }
+    100%{border-radius: 50px 50px 45px 45px;
+        transform:rotate(360deg);
+    }
+}
+.left-hand{
+    position:absolute;
+    margin:10px 70px 0px;    
+    background-color:plum;
+    height:90px;
+    width:20px;
+    border-radius: 50px 50px 50px 50px;
+    animation:left-hand 1s infinite;
+}
+@keyframes left-hand {
+    50%{
+        transform-origin: top;
+        transform: rotate(30deg);
+    }
+}
+.right-hand{
+    position:absolute;
+    margin:10px 260px 0px;    
+    background-color:plum;
+    height:90px;
+    width:20px;
+    border-radius: 50px 50px 50px 50px;animation:right-hand 1s infinite;
+}
+@keyframes right-hand {
+    50%{
+        transform-origin: top;
+        transform:rotate(-30deg);
+    }
+}
+.left-leg{
+    position:absolute;
+    margin:120px 135px 0px;    
+    background-color:plum;
+    height:90px;
+    width:20px;
+    border-radius: 50px 50px 50px 50px;
+    animation:left-leg 1s infinite;
+}
+@keyframes left-leg {
+    50%{
+        transform-origin: top;
+        transform:rotate(30deg);
+    }
+}
+.right-leg{
+    position:absolute;
+    margin:120px 190px 0px;    
+    background-color:plum;
+    height:90px;
+    width:20px;
+    border-radius: 50px 50px 50px 50px;     
+    animation:right-leg 1s infinite;
+    
+}
+@keyframes right-leg {
+    50%{
+        transform-origin: top;
+        transform:rotate(-30deg);
+    }
+}
